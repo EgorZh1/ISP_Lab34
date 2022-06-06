@@ -28,7 +28,7 @@ SECRET_KEY = '@k0#p3kidu)yaaa3u1hplxz)f@^6xiy384*(+n@@s5x#1bx@m5'
 DEBUG = True
 
 ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1','localhost',
-                 'git.heroku.com/onlinequiz-master.git',]
+                 'onlinequiz-master.com']
 
 
 # Application definition
