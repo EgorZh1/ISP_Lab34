@@ -82,24 +82,35 @@ WSGI_APPLICATION = 'onlinequiz.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-#DATABASES = {
+# DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.sqlite3',
 #        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #    }
-#}
+# }
+
+#for docker
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "postgres",
+#         "USER": "postgres",
+#         "PASSWORD": "postgres",
+#         "HOST": "db",  # set in docker-compose.yml
+#          "PORT": 5432,  # default postgres port
+#      }
+# }
 
 DATABASES = {
-     "default": {
-         "ENGINE": "django.db.backends.postgresql",
-         "NAME": "postgres",
-         "USER": "postgres",
-         "PASSWORD": "postgres",
-         "HOST": "db",  # set in docker-compose.yml
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "d2n2p53b7dgoi1",
+        "USER": "otnmxnrocyzreh",
+        "PASSWORD": "0288eebc9dafe8ccb6fe5a76d5db649e9b52f2674271c0ca7bd6d6f237111e4e",
+        "HOST": "ec2-54-227-248-71.compute-1.amazonaws.com",  # set in docker-compose.yml
          "PORT": 5432,  # default postgres port
      }
- }
-
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
