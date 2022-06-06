@@ -15,9 +15,7 @@ def main():
             "forget to activate a virtual environment?"
         ) from exc
     execute_from_command_line(sys.argv)
-#python3 manage.py makemigrations
-#python3 manage.py migrate
-#python3 manage.py runserver
+
 
 if __name__ == '__main__':
     main()
