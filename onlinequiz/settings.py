@@ -27,7 +27,8 @@ SECRET_KEY = '@k0#p3kidu)yaaa3u1hplxz)f@^6xiy384*(+n@@s5x#1bx@m5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1','localhost']
+ALLOWED_HOSTS = ['0.0.0.0', '127.0.0.1','localhost',
+                 'git.heroku.com/onlinequiz-master.git',]
 
 
 # Application definition
@@ -50,6 +51,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     #'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -156,3 +158,7 @@ EMAIL_HOST_PASSWORD = 'xyz' # host email password required
 # otherwise you will get SMTPAuthenticationError at /contactus
 # this process is required because google blocks apps authentication by default
 EMAIL_RECEIVING_USER = ['to@gmail.com'] # email on which you will receive messages sent from website
+
+
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
