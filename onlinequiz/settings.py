@@ -173,7 +173,3 @@ EMAIL_RECEIVING_USER = ['to@gmail.com'] # email on which you will receive messag
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-
-
-
-USE_TZ = True
