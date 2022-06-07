@@ -7,6 +7,9 @@ path('teacherclick', views.teacherclick_view),
 path('teacherlogin', LoginView.as_view(template_name='teacher/teacherlogin.html'),name='teacherlogin'),
 path('teachersignup', views.teacher_signup_view,name='teachersignup'),
 path('teacher-dashboard', views.teacher_dashboard_view,name='teacher-dashboard'),
+
+path('teacher-view-student', views.teacher_view_student_view,name='teacher-view-student'),
+
 path('teacher-exam', views.teacher_exam_view,name='teacher-exam'),
 path('teacher-add-exam', views.teacher_add_exam_view,name='teacher-add-exam'),
 path('teacher-view-exam', views.teacher_view_exam_view,name='teacher-view-exam'),
